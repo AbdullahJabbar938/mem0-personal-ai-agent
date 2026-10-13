@@ -1,0 +1,28 @@
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local secrets and configuration
+.env
+.env.*
+!.env.example
+
+# Generated data and logs
+*.log
+qdrant_storage/
+chroma_db/
+data/
+
+# Editors and operating system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
