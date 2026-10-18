@@ -1,28 +1,27 @@
-
 # Mem0 Personal AI Agent
 
-A local AI agent project exploring persistent long-term memory using
-Mem0, Ollama, and Qdrant.
+A local-first, privacy-focused conversational AI agent with long-term memory. 
+Built with **Mem0**, **Ollama**, **Qwen3**, and **Qdrant**.
 
-## Technology Stack
+This agent remembers facts about you across sessions, retrieves them intelligently using semantic search, and answers questions using a local language model—without sending your data to the cloud.
 
-- Python
-- Mem0
-- Ollama
-- Qdrant
-- Git and GitHub
+## 🏗️ Architecture
 
-## Prerequisites
+- **Memory Framework:** [Mem0](https://mem0.ai) (handles extraction, deduplication, and retrieval)
+- **Language Model:** Ollama running `qwen3:4b` (local inference)
+- **Embeddings:** Ollama running `nomic-embed-text` (local vectorization)
+- **Vector Database:** Qdrant (persistent Docker volume)
 
-- Python
-- Git
-- Ollama
-- Docker Desktop
+## 📋 Prerequisites
 
-## Setup
+- Windows (PowerShell) / macOS / Linux
+- Python 3.11+
+- [Docker Desktop](https://www.docker.com/products/docker-desktop)
+- [Ollama](https://ollama.com) installed and running
 
-1. Create and activate a Python virtual environment.
-2. Install dependencies with `python -m pip install -r requirements.txt`.
-3. Configure local settings in `.env`.
-4. Start Qdrant and download the required Ollama models.
-5. Run the application after implementation is complete.
+## 🚀 Quick Start
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/YOUR_USERNAME/mem0-personal-ai-agent.git
+cd mem0-personal-ai-agent
