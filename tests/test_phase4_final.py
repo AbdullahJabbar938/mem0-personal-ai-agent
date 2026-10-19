@@ -1,6 +1,10 @@
 """Final Phase 4 regression and persistence test."""
 
 import sys
+import os
+
+# Add the project root to sys.path so we can import 'app'
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from app.constants import USER_ID
 from app.memory import create_memory

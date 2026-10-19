@@ -93,7 +93,7 @@ def main() -> None:
 
     while True:
         try:
-            raw_input = input("You: ")
+            raw_input = input("\nYou: ")
         except (EOFError, KeyboardInterrupt):
             print("\nExiting.")
             break
